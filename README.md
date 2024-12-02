@@ -2,6 +2,8 @@ LandingPage
 
 É um projeto educacional desenvolvido a partir de uma atividade escolar com o intuito de criar uma Landing-Page de uma marca que está distribuindo cupoms promocionais para seus clientes.
 
+<img src="assets/DemonstracaoAplicacao.gif">
+
 ===========================================================================
 
 Este projeto é uma aplicação desenvolvida com Node.js para o back-end e React para o front-end.
@@ -102,4 +104,3 @@ Após seguir os passos acima, o back-end estará rodando em http://localhost:333
 
 Abra o navegador e acesse o endereço do front-end. Você deve ver a aplicação em funcionamento.
 
-<img src="assets/DemonstracaoAplicacao.gif">
