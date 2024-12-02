@@ -18,7 +18,9 @@ Pré-requisitos
 Antes de rodar a aplicação, certifique-se de ter as seguintes ferramentas instaladas no seu computador:
 
 Node.js: Você pode baixá-lo e instalá-lo a partir do site oficial: https://nodejs.org/.
+
 npm: O Node.js instala automaticamente o npm (gerenciador de pacotes) que será usado para instalar dependências.
+
 Git (opcional): Para clonar o repositório diretamente
 
 ===========================================================================
