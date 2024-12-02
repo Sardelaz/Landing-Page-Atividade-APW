@@ -101,3 +101,5 @@ Passo 4: Testando a aplicação
 Após seguir os passos acima, o back-end estará rodando em http://localhost:3333 e o front-end em http://localhost:3000. 
 
 Abra o navegador e acesse o endereço do front-end. Você deve ver a aplicação em funcionamento.
+
+<img src="web/src/assets/DemonstraçãoAplicação.mp4">
