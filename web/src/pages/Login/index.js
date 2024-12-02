@@ -5,8 +5,8 @@ import { FiLogIn } from "react-icons/fi";
 import api from "../../services/api";
 import "./styles.css";
 
-import logoImg from "../../assets/logo.png"; // Verifique se o caminho está correto
-import fundo from "../../assets/fundo.png"; // Verifique se o caminho está correto
+import logoImg from "../../assets/logo.png"; 
+import fundo from "../../assets/fundo.png"; 
 
 export default function Logon() {
 
@@ -22,7 +22,7 @@ export default function Logon() {
             localStorage.setItem('userId', id);
             localStorage.setItem('userName', response.data.name);
     
-            alert('Seu cupom promocional é SilviaMeDa10');
+            alert('Seu cupom promocional é SilviaMeDaMB');
         } catch (err) {
             console.error(err.response?.data || err.message); 
             alert('Falha no login, tente novamente');
@@ -35,14 +35,14 @@ export default function Logon() {
             
             {/* Formulário de login */}
             <section className="form">
-                <img src={logoImg} alt="Be The Hero" />
+                <img src={logoImg} alt="logotipo" />
 
                 <form onSubmit={handleLogin}>
-                    <h1>Ganhe seu cupom com seu id</h1>
+                    <h1>Se conecte e pegue seu cupom</h1>
 
                     {/* Input para a ID */}
                     <input 
-                    placeholder="Sua ID"
+                    placeholder="Seu ID"
                     value={id}
                     onChange={e => setId(e.target.value)}
                     />

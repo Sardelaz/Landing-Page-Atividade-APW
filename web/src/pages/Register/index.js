@@ -13,15 +13,16 @@ export default function Register() {
     const [whatsapp, setWhatsapp] = useState('');
     const [city, setCity] = useState('');
     const [uf, setUf] = useState('');
-
+    const [isClient, setIsClient] = useState(''); 
+    
     const navigate = useNavigate();
 
     async function handleRegister(e) {
         e.preventDefault();
 
-        const data = { name, email, whatsapp, city, uf };
+        const data = { name, email, whatsapp, city, uf, isClient };
 
-        if (!name || !email || !whatsapp || !city || !uf) {
+        if (!name || !email || !whatsapp || !city || !uf || !isClient) {
             return alert('Por favor, preencha todos os campos!');
         }
 
@@ -89,6 +90,16 @@ export default function Register() {
                             onChange={e => setUf(e.target.value.toUpperCase())} // Converte para maiúsculas
                         />
                     </div>
+
+                    {/* Select para verificar se é cliente */}
+                    <select 
+                        value={isClient} 
+                        onChange={e => setIsClient(e.target.value)} 
+                    >
+                        <option value="">Você já estudou com a gente?</option>
+                        <option value="yes">Sim</option>
+                        <option value="no">Não</option>
+                    </select>
 
                     <button className="button" type="submit">Cadastrar</button>
                 </form>
