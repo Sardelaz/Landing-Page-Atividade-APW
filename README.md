@@ -102,4 +102,4 @@ Após seguir os passos acima, o back-end estará rodando em http://localhost:333
 
 Abra o navegador e acesse o endereço do front-end. Você deve ver a aplicação em funcionamento.
 
-<img src="web/src/assets/DemonstraçãoAplicação.mp4">
+<img src="assets/DemonstraçãoAplicação.gif">
