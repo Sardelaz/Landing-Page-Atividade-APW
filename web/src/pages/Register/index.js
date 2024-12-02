@@ -44,7 +44,7 @@ export default function Register() {
         <div className="register-container">
             <div className="content">
                 <section>
-                    <img src={logoImg} alt="Logotipo" />
+                    <img className="logo" src={logoImg} alt="Logotipo" />
 
                     <h1>Cadastro</h1>
                     <p>Faça seu cadastro, entre na plataforma e ganhe seu cupom</p>

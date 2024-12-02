@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logon-container section.form {
@@ -46,4 +47,66 @@
 
 .search-results li:hover {
     background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    .logon-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logon-container section.form {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .logon-container section.form form {
+        margin-top: 20px; 
+    }
+
+    .register-container .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-container form {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .responsive-image {
+        display: none;
+    }
+
+    .logo{
+        width: 170px;
+        margin-bottom: auto;   
+        top: 0; 
+    }
+
+    .back-link-bottom {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #41414d;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 500;
+    }
 }

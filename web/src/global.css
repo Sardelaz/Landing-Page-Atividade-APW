@@ -13,7 +13,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-input, select, button, textarea {
+input, select, button {
     font: 400 18px Roboto, sans-serif;
 }
 
@@ -28,18 +28,6 @@ form input {
     border: 1px solid #dcdce6;
     border-radius: 8px;
     padding: 0 24px;
-}
-
-form textarea {
-    width: 100%;
-    resize: vertical;
-    min-height: 140px;
-    height: 60px;
-    color: #333;
-    border: 1px solid #dcdce6;
-    border-radius: 8px;
-    padding: 16px 24px;
-    line-height: 24px;
 }
 
 form select {
@@ -91,4 +79,59 @@ form select {
 
 .back-link:hover {
     opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+    }
+
+    form input, 
+    form select, 
+    .button {
+        width: 100%; 
+        height: 50px;
+        font-size: 16px;
+        margin-bottom: 10px; 
+    }
+
+    .button {
+        line-height: 50px;
+    }
+
+    .back-link {
+        font-size: 16px;
+    }
+
+    .back-link svg {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; 
+    }
+
+    form input, 
+    form select, 
+    .button {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .button {
+        line-height: 45px; 
+    }
+
+    .back-link {
+        font-size: 14px; 
+    }
 }

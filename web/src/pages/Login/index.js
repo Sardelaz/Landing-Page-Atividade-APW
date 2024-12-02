@@ -35,7 +35,7 @@ export default function Logon() {
             
             {/* Formulário de login */}
             <section className="form">
-                <img src={logoImg} alt="logotipo" />
+                <img className="logo" src={logoImg} alt="logotipo" />
 
                 <form onSubmit={handleLogin}>
                     <h1>Se conecte e pegue seu cupom</h1>
@@ -53,7 +53,7 @@ export default function Logon() {
                     </button>
 
                     {/* Link para a página de registro */}
-                    <Link className="back-link" to="/register">
+                    <Link className="back-link back-link-bottom" to="/register">
                         <FiLogIn size={16} color="#f0f0f5" />
                         <p>Não tenho cadastro</p>
                     </Link>
@@ -61,7 +61,7 @@ export default function Logon() {
             </section>
 
             {/* Imagem de destaque */}
-            <img src={fundo} alt="background" />
+            <img className="responsive-image" src={fundo} alt="background" />
         </div>
     );
 }
