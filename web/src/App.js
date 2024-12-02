@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './global.css'
+
+import RoutesConfig from "./routes";
 
 function App() {
   return (
-    <h1>Hello world</h1>
+    <RoutesConfig/>
   );
 }
 
