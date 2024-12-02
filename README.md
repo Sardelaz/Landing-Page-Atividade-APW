@@ -22,6 +22,7 @@ npm: O Node.js instala automaticamente o npm (gerenciador de pacotes) que será 
 Git (opcional): Para clonar o repositório diretamente
 
 ============================================================================================
+
 Como rodar a aplicação:
 
 Passo 1: Clonar o repositório
@@ -51,6 +52,7 @@ npm start
 O servidor será iniciado e estará disponível por padrão em http://localhost:3333.
 
 ============================================================================================
+
 Passo 3: Configuração do front-end (React)
 Navegue até a pasta do front-end:
 
